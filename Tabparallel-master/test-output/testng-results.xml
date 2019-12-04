@@ -1,76 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-20T20:41:08Z" name="Suite" finished-at="2019-08-20T20:42:27Z" duration-ms="79261">
+  <suite name="Suite" duration-ms="89411" started-at="2019-12-04T15:46:36Z" finished-at="2019-12-04T15:48:05Z">
     <groups>
       <group name="cucumber">
-        <method signature="Runner_Chrome.scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@384ad17b]" name="scenario" class="com.Tab.runners.Runner_Chrome"/>
-        <method signature="Runner_Chrome.scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@6379eb]" name="scenario" class="com.Tab.runners.Runner_Chrome"/>
+        <method signature="Runner_Chrome.scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@76f2b07d]" name="scenario" class="com.Tab.runners.Runner_Chrome"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2019-08-20T20:41:08Z" name="chrome Test" finished-at="2019-08-20T20:41:23Z" duration-ms="15175">
+    <test name="chrome Test" duration-ms="89411" started-at="2019-12-04T15:46:36Z" finished-at="2019-12-04T15:48:05Z">
       <class name="com.Tab.runners.Runner_Chrome">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Tab.runners.Runner_Chrome@384ad17b]" started-at="2019-08-20T20:41:08Z" name="setUpClass" finished-at="2019-08-20T20:41:09Z" duration-ms="821" status="PASS">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Tab.runners.Runner_Chrome@76f2b07d]" name="setUpClass" is-config="true" duration-ms="131" started-at="2019-12-04T21:16:36Z" finished-at="2019-12-04T21:16:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@58359ebd]]>
+                <![CDATA[org.testng.TestRunner@4229bb3f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@384ad17b]" started-at="2019-08-20T20:41:09Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:41:22Z" duration-ms="13502" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["create customer Deposit"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Onboarding"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@384ad17b]" started-at="2019-08-20T20:41:09Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:41:22Z" duration-ms="12855" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["create Loan Deposit"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Onboarding"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@384ad17b]" started-at="2019-08-20T20:41:09Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:41:22Z" duration-ms="12705" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["create Customer"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Onboarding"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@384ad17b]" started-at="2019-08-20T20:41:09Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:41:23Z" duration-ms="13833" status="PASS">
+        <test-method status="FAIL" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@76f2b07d]" name="scenario" duration-ms="42112" started-at="2019-12-04T21:16:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-12-04T21:17:18Z">
           <params>
             <param index="0">
               <value>
@@ -83,93 +34,97 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@cuba-id="application"]' (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@cuba-id="application"]' (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.Tab.PageObjects.BasePage.waitForPageToLoad(BasePage.java:46)
+	at com.Tab.PageObjects.BasePage.base(BasePage.java:32)
+	at com.Tab.PageObjects.Page_LoginPage.loginToApplication(Page_LoginPage.java:46)
+	at com.Tab.steps.StepDefinition_OnBoarding.launch_browser(StepDefinition_OnBoarding.java:41)
+	at ✽.launch browser(file:src/test/resources/features/OnBoarding.feature:5)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@cuba-id="application"]"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VMT3441', ip: '172.22.30.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\SATISH~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e429fae009ccc94f1fdf210f8aaf339e
+*** Element info: {Using=xpath, value=//span[@cuba-id="application"]}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy18.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.Tab.PageObjects.BasePage.waitForPageToLoad(BasePage.java:46)
+	at com.Tab.PageObjects.BasePage.base(BasePage.java:32)
+	at com.Tab.PageObjects.Page_LoginPage.loginToApplication(Page_LoginPage.java:46)
+	at com.Tab.steps.StepDefinition_OnBoarding.launch_browser(StepDefinition_OnBoarding.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:49)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:57)
+	at com.Tab.runners.Runner_Chrome.scenario(Runner_Chrome.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenario -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@384ad17b]" started-at="2019-08-20T20:41:09Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:41:22Z" duration-ms="13456" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create lona Product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["E-Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@384ad17b]" started-at="2019-08-20T20:41:09Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:41:22Z" duration-ms="12811" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create lona Product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["E-Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Tab.runners.Runner_Chrome@384ad17b]" started-at="2019-08-20T20:41:23Z" name="tearDownClass" finished-at="2019-08-20T20:41:23Z" duration-ms="37" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- com.Tab.runners.Runner_Chrome -->
-    </test> <!-- chrome Test -->
-    <test started-at="2019-08-20T20:41:23Z" name="dd Test" finished-at="2019-08-20T20:42:27Z" duration-ms="63506">
-      <class name="com.Tab.runners.Runner_Chrome">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Tab.runners.Runner_Chrome@6379eb]" started-at="2019-08-20T20:41:23Z" name="setUpClass" finished-at="2019-08-20T20:41:24Z" duration-ms="224" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@24b6b8f6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@6379eb]" started-at="2019-08-20T20:41:24Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:42:27Z" duration-ms="62950" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["create Customer"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Onboarding"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@6379eb]" started-at="2019-08-20T20:41:24Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:42:27Z" duration-ms="63060" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["create Deposit one"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Onboarding"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@6379eb]" started-at="2019-08-20T20:41:24Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:42:27Z" duration-ms="63102" status="PASS">
+        <test-method status="FAIL" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@76f2b07d]" name="scenario" duration-ms="88756" started-at="2019-12-04T21:16:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-12-04T21:18:05Z">
           <params>
             <param index="0">
               <value>
@@ -182,66 +137,105 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@cuba-id="application"]' (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@cuba-id="application"]' (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.Tab.PageObjects.BasePage.waitForPageToLoad(BasePage.java:46)
+	at com.Tab.PageObjects.BasePage.base(BasePage.java:32)
+	at com.Tab.PageObjects.Page_LoginPage.loginToApplicationtwo(Page_LoginPage.java:67)
+	at com.Tab.steps.StepDefinition_OnBoarding.launch_browsert(StepDefinition_OnBoarding.java:47)
+	at ✽.launch browsert(file:src/test/resources/features/OnBoarding.feature:17)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@cuba-id="application"]"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VMT3441', ip: '172.22.30.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\SATISH~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 70797718653ca93d0ee84f14d1c0b2a7
+*** Element info: {Using=xpath, value=//span[@cuba-id="application"]}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy18.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.Tab.PageObjects.BasePage.waitForPageToLoad(BasePage.java:46)
+	at com.Tab.PageObjects.BasePage.base(BasePage.java:32)
+	at com.Tab.PageObjects.Page_LoginPage.loginToApplicationtwo(Page_LoginPage.java:67)
+	at com.Tab.steps.StepDefinition_OnBoarding.launch_browsert(StepDefinition_OnBoarding.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:49)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:57)
+	at com.Tab.runners.Runner_Chrome.scenario(Runner_Chrome.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenario -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@6379eb]" started-at="2019-08-20T20:41:24Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:42:27Z" duration-ms="63151" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["create customer Deposit"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Onboarding"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@6379eb]" started-at="2019-08-20T20:41:24Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:42:27Z" duration-ms="62949" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create lona Product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["E-Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario -->
-        <test-method signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Tab.runners.Runner_Chrome@6379eb]" started-at="2019-08-20T20:41:24Z" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-20T20:42:27Z" duration-ms="63140" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create lona Product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["E-Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Tab.runners.Runner_Chrome@6379eb]" started-at="2019-08-20T20:42:27Z" name="tearDownClass" finished-at="2019-08-20T20:42:27Z" duration-ms="59" status="PASS">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.Tab.runners.Runner_Chrome@76f2b07d]" name="tearDownClass" is-config="true" duration-ms="36" started-at="2019-12-04T21:18:05Z" finished-at="2019-12-04T21:18:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="mailReport()[pri:0, instance:com.Tab.runners.Runner_Chrome@6379eb]" started-at="2019-08-20T20:42:27Z" name="mailReport" finished-at="2019-08-20T20:42:28Z" duration-ms="257" status="PASS">
+        <test-method status="PASS" signature="mailReport()[pri:0, instance:com.Tab.runners.Runner_Chrome@76f2b07d]" name="mailReport" is-config="true" duration-ms="107" started-at="2019-12-04T21:18:06Z" finished-at="2019-12-04T21:18:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mailReport -->
       </class> <!-- com.Tab.runners.Runner_Chrome -->
-    </test> <!-- dd Test -->
+    </test> <!-- chrome Test -->
   </suite> <!-- Suite -->
 </testng-results>

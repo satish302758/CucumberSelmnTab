@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="6" parallel="methods" data-provider-thread-count="6" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods" data-provider-thread-count="2">
   <listeners>
     <listener class-name="com.Tab.TestNGListeners.SetupListener"/>
+    <listener class-name="com.Tab.TestNGListeners.SuiteListener"/>
+    <listener class-name="com.Tab.TestNGListeners.InvokeMethod"/>
   </listeners>
-  <test thread-count="6" parallel="methods" name="dd Test(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test name="chrome Test(failed)" parallel="methods">
+    <parameter name="browser" value="CHROME"/>
     <classes>
       <class name="com.Tab.runners.Runner_Chrome">
         <methods>
           <include name="tearDownClass"/>
           <include name="mailReport"/>
-          <include name="scenario" invocation-numbers="1 0 3 2"/>
+          <include name="scenario" invocation-numbers="0 1"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- com.Tab.runners.Runner_Chrome -->
     </classes>
-  </test> <!-- dd Test(failed) -->
+  </test> <!-- chrome Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

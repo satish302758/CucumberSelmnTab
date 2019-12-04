@@ -1,0 +1,7 @@
+INFO    2019-08-21 02:16:18,045 [main] com.Tab.TestNGListeners.SetupListener  - config loaded
+INFO    2019-08-21 02:16:18,074 [main] com.Tab.TestNGListeners.SetupListener  - config properties file loaded
+INFO    2019-08-21 02:16:18,080 [main] com.Tab.TestNGListeners.SetupListener  - Grid path loaded
+INFO    2019-08-21 02:16:18,081 [main] com.Tab.TestNGListeners.SetupListener  - FireFox Binary Loaded loaded
+INFO    2019-08-21 02:16:18,081 [main] com.Tab.TestNGListeners.SetupListener  - Chrome Driver file loaded
+INFO    2019-08-21 02:16:18,081 [main] com.Tab.TestNGListeners.SetupListener  - FireFox Driver file loaded
+INFO    2019-08-21 02:16:18,081 [main] com.Tab.TestNGListeners.SetupListener  - Internet Explorer Driver file loaded

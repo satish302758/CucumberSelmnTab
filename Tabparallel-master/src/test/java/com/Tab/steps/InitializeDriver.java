@@ -25,6 +25,8 @@ import com.Tab.Utilities.BROWSER;
 import com.Tab.Utilities.ConfigFactory;
 import com.Tab.Utilities.GridStart;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class InitializeDriver
 {
 	private WebDriver driver;
@@ -67,8 +69,10 @@ public class InitializeDriver
 			switch (browser)
 			{
 			case CHROME:
-				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverExePath());
-				driver = new ChromeDriver(OptionsManager.getChromeOptions());
+		//		System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverExePath());
+		//		driver = new ChromeDriver(OptionsManager.getChromeOptions());
+				WebDriverManager.chromedriver().version("78.0.3904.70").setup(); 
+				driver = new ChromeDriver();
 				break;
 			case FIREFOX:
 				// to write low level warning logs to temp

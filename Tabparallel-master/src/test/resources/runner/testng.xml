@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="Suite"  parallel="methods" thread-count="6" data-provider-thread-count="6" >
+<suite name="Suite"  parallel="methods" thread-count="2" data-provider-thread-count="2" >
 
   <test  name="chrome Test">
    <parameter name="browser" value="CHROME"></parameter>
@@ -10,12 +10,12 @@
    <class name="com.Tab.runners.Runner_Chrome"/> 
     </classes>
   </test> 
-   <test  name="dd Test">
+   <!-- <test  name="dd Test">
    <parameter name="browser" value="firefox"></parameter>
     <classes>   
    <class name="com.Tab.runners.Runner_Chrome"/> 
     </classes>
-  </test> 
+  </test>  -->
   <listeners>
     <listener class-name="com.Tab.TestNGListeners.SetupListener"/>
     <listener class-name="com.Tab.TestNGListeners.SuiteListener"/>

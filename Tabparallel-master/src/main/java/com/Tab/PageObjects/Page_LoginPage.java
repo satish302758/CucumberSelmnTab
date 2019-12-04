@@ -25,24 +25,49 @@ public class Page_LoginPage extends BasePage
 	@FindBy(xpath = "//div[@cuba-id=\"loginButton\"]")
 	WebElement btn_Login;
 
-	public Page_HomePage loginToApplication(String user, String Password)
+	public Page_HomePage loginToApplication()
 	{
 		 
 		try
 		{
-			DriverManager.getDriver().navigate().to("https://onboardingint.tabbank.com/app/#!");
+			
+			
+			DriverManager.getDriver().navigate().to("https://google.com");
+			/*DriverManager.getDriver().navigate().to("https://onboardingint.tabbank.com/app/#!");
 			// base(Page_LoginPage.class);
 			PageFactory.initElements(driver, this);
 			type(txt_UserName, "admin", "UserName");
 			type(txt_Password, "abc123", "Password");
-			click(btn_Login, "Login button");
+			click(btn_Login, "Login button");*/
 		} catch (Exception e)
 		{
 			e.printStackTrace();
 		}
 		return (Page_HomePage) base(Page_HomePage.class);
 	}
-	public Page_HomePage loginToApplicationtwo(String user, String Password)
+	
+	
+	public Page_HomePage loginToApplicationtwo() {
+		
+		try
+		{
+			
+			
+			DriverManager.getDriver().navigate().to("https://gotomeeting.com");
+			/*DriverManager.getDriver().navigate().to("https://onboardingint.tabbank.com/app/#!");
+			// base(Page_LoginPage.class);
+			PageFactory.initElements(driver, this);
+			type(txt_UserName, "admin", "UserName");
+			type(txt_Password, "abc123", "Password");
+			click(btn_Login, "Login button");*/
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		return (Page_HomePage) base(Page_HomePage.class);
+	}
+	
+/*	public Page_HomePage loginToApplicationtwo(String user, String Password)
 	{
 		try
 		{
@@ -58,7 +83,7 @@ public class Page_LoginPage extends BasePage
 			e.printStackTrace();
 		}
 		return (Page_HomePage) base(Page_HomePage.class);
-	}
+	}*/
 	@Override
 	protected ExpectedCondition getPageLoadCondition()
 	{

@@ -28,10 +28,11 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.PickleEventWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
-@CucumberOptions(features =
-{ "src/test/resources/features" }, glue =
-{ "com.Tab.steps", "com.Tab.runners" } , plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json"
-		}
+@CucumberOptions(
+features ={ "src/test/resources/features" },
+glue ={ "com.Tab.steps", "com.Tab.runners" } ,
+plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json"},
+tags= {"@web"}
 
 		
 		)

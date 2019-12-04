@@ -16,7 +16,7 @@ import io.cucumber.datatable.DataTable;
 
 public class StepDefinition_OnBoarding 
 {
-	Page_LoginPage login;
+	Page_LoginPage login = new Page_LoginPage();
 	Page_HomePage home;
 	Page_Applications applications;
 	/*
@@ -38,13 +38,13 @@ public class StepDefinition_OnBoarding
 	@Given("launch browser")
 	public void launch_browser( ) {
 
-     //  login = new Page_LoginPage();
+       login.loginToApplication();
   
 	}
 	@Given("launch browsert")
 	public void launch_browsert( ) {
 
-    //// login = new Page_LoginPage();
+		 login.loginToApplicationtwo();
 	}
 	 
 	@When("^user navigates to the URL ([^\\\"]*)$")

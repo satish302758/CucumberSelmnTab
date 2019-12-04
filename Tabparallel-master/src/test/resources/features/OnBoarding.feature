@@ -12,7 +12,7 @@ Feature: Onboarding
       | s |
       | s |
      
-@wbe2
+@web
   Scenario: create Loan Deposit
     Given launch browsert
     When user navigates to the URL  <user>

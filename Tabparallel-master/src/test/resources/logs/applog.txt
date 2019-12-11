@@ -1,8 +1,8 @@
-INFO    2019-12-04 21:16:36,393 [main] com.Tab.TestNGListeners.SetupListener  - config loaded
-INFO    2019-12-04 21:16:36,425 [main] com.Tab.TestNGListeners.SetupListener  - config properties file loaded
-INFO    2019-12-04 21:16:36,425 [main] com.Tab.TestNGListeners.SetupListener  - Grid path loaded
-INFO    2019-12-04 21:16:36,425 [main] com.Tab.TestNGListeners.SetupListener  - FireFox Binary Loaded loaded
-INFO    2019-12-04 21:16:36,425 [main] com.Tab.TestNGListeners.SetupListener  - Chrome Driver file loaded
-INFO    2019-12-04 21:16:36,425 [main] com.Tab.TestNGListeners.SetupListener  - FireFox Driver file loaded
-INFO    2019-12-04 21:16:36,425 [main] com.Tab.TestNGListeners.SetupListener  - Internet Explorer Driver file loaded
-INFO    2019-12-04 21:18:05,773 [main] com.Tab.TestNGListeners.SetupListener  - Summary TESTNG Report Mailed
+INFO    2019-12-11 10:13:30,500 [main] com.Tab.TestNGListeners.SetupListener  - config loaded
+INFO    2019-12-11 10:13:30,597 [main] com.Tab.TestNGListeners.SetupListener  - config properties file loaded
+INFO    2019-12-11 10:13:30,607 [main] com.Tab.TestNGListeners.SetupListener  - Grid path loaded
+INFO    2019-12-11 10:13:30,607 [main] com.Tab.TestNGListeners.SetupListener  - FireFox Binary Loaded loaded
+INFO    2019-12-11 10:13:30,607 [main] com.Tab.TestNGListeners.SetupListener  - Chrome Driver file loaded
+INFO    2019-12-11 10:13:30,607 [main] com.Tab.TestNGListeners.SetupListener  - FireFox Driver file loaded
+INFO    2019-12-11 10:13:30,607 [main] com.Tab.TestNGListeners.SetupListener  - Internet Explorer Driver file loaded
+INFO    2019-12-11 10:15:26,929 [main] com.Tab.TestNGListeners.SetupListener  - Summary TESTNG Report Mailed
